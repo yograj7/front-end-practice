@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mytra</title>
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #e7dede;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .bi bi-search {
+      align-items: left;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center-left;
+      background-color: #fff;
+      padding: 7px 30px;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    .shortcurt {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      text-align: center;
+    }
+    .bi bi-person, .bi bi-heart, .bi bi-cart {
+      font-weight: bold;
+    }
+    .logo {
+      font-size: 50px;
+      font-family: Brush Script MT, cursive;
+      font-style: italic;
+      font-weight: bold;
+      color: #ff4081;
+      margin-right: 0.1px;
+    }
+    .brand-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e026ae;
+      margin-left: 5px;
+      font-family: Breafast regular, sans-serif;
+      font-style: italic;
+      margin-left: 0.1px;
+    }
+    .shortcurt-text {
+      font-size: 14px;
+      color: #333;
+      display: block;
+    }
+    nav span {
+      margin-right: 20px;
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      flex-direction: row;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <div>
+        <nav>
+          <span class="logo">m</span>
+          <span class="brand-name">ytra</span>
+          <span>Men</span>
+          <span>Women </span>
+          <span>Kids</span>
+          <span>Beuty </span>
+          <span>Home</span>
+          <span>Studio</span>
+        </nav>
+    </div>
+    <div>
+        <div class="search-bar">
+          <span class="bi bi-search"></span>
+          <span>Search for products, brands and more</span>
+        </div>
+    </div>
+      <div class="shortcurt">
+        <div>
+          <span class="bi bi-person"></span>
+          <span class="shortcurt-text">Profile</span>
+        </div>
+        <div>
+          <span class="bi bi-heart"></span>
+          <span class="shortcurt-text">Wishlist</span>
+        </div>
+        <div>
+          <span class="bi bi-cart"></span>
+          <span class="shortcurt-text">Bag</span>
+        </div>
+      </div>
+    </header>
+</body>
+</html>
