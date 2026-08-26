@@ -36,23 +36,14 @@
             margin-bottom: 10px;
         }
         input ,number::placeholder{
-            padding: 5px;
+            padding: 7px;
         }
 
 
-        input:checked{
-        background-color: rgb(125, 239, 125);
-        }
+        input:invalid {
 
-        input:visited{
-            border-color:1px solid  aquamarine ;
-        }
+         border:1px solid rgb(136, 0, 255);
 
-         input:invalid {
-
-         border:1px solid red;
-
-         outline: none;
 
        }
         
@@ -63,15 +54,15 @@
        }
 
         input:required {
-
         display: inline;
-
         border-color: red;
+        border-left-width:  5px ;
+        
     }
 
        #age:in-range{
          display: block;
-         border-color: 2px green;
+         background-color: lightgreen;
          outline: none;
 
        }
@@ -80,7 +71,7 @@
 
          display: block;
 
-         color:red;
+         background-color:lightcoral;
 
          font-size: 12px;
          outline: none;
@@ -92,6 +83,7 @@
             display: flex;
             flex-direction: row;
             margin: 10px 0px 10px 0px;
+            cursor:not-allowed;
         }
         button{
             padding: 10px;
@@ -126,7 +118,7 @@
 
             <div class="box-pair">
                 <label for="">Age</label>
-                <input type="number" placeholder="Enter Age" id="age" min="18" max="55">
+                <input type="number" placeholder="Enter Age" id="age" min="18" max="55" required>
             </div>
 
             <div class="box-pair" id="checkbox">
