@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumora Studios - movie </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        header {
+            background-color: rgb(233, 49, 49);
+            text-align: center;
+            padding: 20px;
+            color: white;
+            line-height: 30px;
+        }
+
+        nav {
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            word-spacing: 50px;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: black;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        .card {
+            background-color: #3b3636;;
+            margin: 40px;
+            border-radius: 10px;
+            color: white;
+            line-height: 30px;
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        /* .p::first-letter {
+            font-size: 50px;
+        } */
+
+        div p:first-of-type::first-letter {
+            font-size: 3.5em;
+            color: #FF5733;
+            margin-right: 8px;
+            line-height: 1;
+        }
+
+
+        article {
+            background-color: #3b3636;
+            color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        aside {
+            background-color: white;
+            color: black;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            line-height: 30px;
+            margin-top: -20px;
+        }
+        .first::first-letter{
+            font-size: 40px;
+            
+        }
+        p{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lumora Studios</h1>
+        <p>Watch Unlimited Movies Anytime</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Series</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <section>
+            <div class="card">
+                <h2>Avengers: Endgame</h2>
+                <img src="./public/images/avangers-endgame.jpg" alt="Avrengers:Endgame">
+                <p>Earth's Mightiest Heroes unite for the final battle to save the universe.</p>
+                <p class="first">⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="card">
+                <h2>Avengers: Endgame</h2>
+                <img src="./public/images/Interstellar.jpg" alt="Avrengers:Endgame">
+                <p>Earth's Mightiest Heroes unite for the final battle to save the universe.</p>
+                <p class="first">⭐⭐⭐⭐⭐</p>
+            </div>
+        </section>
+        <article>
+            <h3>Trending Movies</h3>
+            <p>✔ Avengers</p>
+            <p>✔ Interstellar</p>
+            <p>✔ Batman</p>
+            <p>✔ Spider-Man</p>
+            <aside>"Movies touch our hearts and inspire our imagination."</aside>
+        </article>
+    </main>
+
+    <footer>
+        <h2>Lumora Studios</h2>
+        <small>
+            🎬 Entertainment • Adventure • Action 🍿</small>
+        <p>© 2026 Lumora-Studios. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+        .container{
+            padding: 20px;
+            box-shadow: 0px 0px 5px 5px grey;
+            justify-content: space-evenly;
+            background-color: white;
+            border-radius: 10px;
+            margin: 20px;
+            margin-top: 100px;
+            width: 400px;
+        }
+
+        h1{
+            text-align: center;
+            color: blue;
+        }
+        .box-pair{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        input ,number::placeholder{
+            padding: 5px;
+        }
+
+
+        input:checked{
+        background-color: rgb(125, 239, 125);
+        }
+
+        input:visited{
+            border-color:1px solid  aquamarine ;
+        }
+
+         input:invalid {
+
+         border:1px solid red;
+
+         outline: none;
+
+       }
+        
+       input:valid {
+
+        border-color: aquamarine;
+
+       }
+
+        input:required {
+
+        display: inline;
+
+        border-color: red;
+    }
+
+       #age:in-range{
+         display: block;
+         border-color: 2px green;
+         outline: none;
+
+       }
+
+       #age:out-of-range {
+
+         display: block;
+
+         color:red;
+
+         font-size: 12px;
+         outline: none;
+
+       }
+
+
+        #checkbox{
+            display: flex;
+            flex-direction: row;
+            margin: 10px 0px 10px 0px;
+        }
+        button{
+            padding: 10px;
+            background-color: rgb(70, 110, 138);
+            color: white;
+            font-size: 15px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Student Registration Form</h1>
+            <div class="box-pair">
+                <label for="">Student ID</label>
+                <input type="text" placeholder="STD2026001" disabled>
+            </div>
+
+            <div class="box-pair">
+                <label for="">Full Name</label>
+                <input type="text" placeholder="Enter Full Name" required>
+            </div>
+
+            <div class="box-pair">
+                <label for="">Email</label>
+                <input type="email" placeholder="Enter Email"required>
+            </div>
+
+            <div class="box-pair">
+                <label for="">Age</label>
+                <input type="number" placeholder="Enter Age" id="age" min="18" max="55">
+            </div>
+
+            <div class="box-pair" id="checkbox">
+                <input type="checkbox" >
+                <label for="">I Accept Term & Condition</label>
+            </div>
+
+            <div class="box-pair">
+                <button>Register</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

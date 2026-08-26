@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> netflix clone</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .shade{
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 1600px;
+            margin-top: -10px;
+            margin-left: -10px;
+            width: 102%;
+        }
+
+        .try-srip{
+            background-image: linear-gradient(to right,blue,rgb(99, 13, 93),red);
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        .shortcurts{
+            display: flex;
+            flex-direction: row;
+            color: white;
+            gap: 20px;
+            margin-top: 30px;
+            padding: 1px;
+
+        }
+        .entry-btn{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .logo-name{
+            color: white;
+            font-size: 40px;
+            margin-left: 150px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .netflix-header{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-between;
+
+        }
+        .btn-singin{
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 150px;
+        }
+        .btn-language{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .try-btn{
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            width: 200px;
+        }
+        .email-input{
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;;
+            width: 200px;
+            margin-left: 450px;
+        }
+        .main-title{
+            color: white;
+            font-size: 70px;
+            font-weight: bold;
+            margin-top: 100px;
+            font-family: Arial, Helvetica, sans-serif;;
+        }
+        .main-subtitle{
+            color: white;
+            font-size: 30px;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;;
+        }
+        .main-description{
+            color: white;
+            font-size: 20px;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;;
+        }
+        .terms{
+            color: white;
+            font-size: 15px;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;;
+        }
+        .main-content{
+            text-align: center;
+        }
+        .faq-section{
+            color: white;
+            font-size: 30px;
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid white;
+            
+        }
+        .faq-item-1, .faq-item-2, .faq-item-3, .faq-item-4, .faq-item-5{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid white;
+            
+        }
+        .faq-title{
+            color: white;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            margin-left: 100px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+        footer{
+            color: white;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        .footer-links{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            gap: 100px;
+            margin-top: 20px;
+        }
+        .sepration{
+            display: block;
+        }
+        address{
+            font-size: 40x;
+        }
+        .india{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-top: 30px;
+
+        }
+        .final{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            margin-top: 30px;
+        }
+        /* div span{
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        } */
+    </style>
+</head>
+<body background="./public/images/netflix-backgraund.jpg">
+    <div class="shade">
+        <header>
+            <div class="try-srip">
+                <span class="bi bi-gift"></span>
+                New to Netflix? Try 14 days for 0 ₹
+            </div>
+            <div>
+                    <div class="netflix-header">
+                    <div>
+                        <span class="logo-name">NETFLIX</span>
+                    </div>
+                        <div class="shortcurts">
+                            <div class="btn-language">
+                                <span class="bi bi bi-translate"></span>
+                                <span>English</span>
+                                <span class="bi bi-chevron-down"></span>
+                            </div>
+                            <div class="btn-singin">signin</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section>
+                <div class="main-title">Unlimited movies,<br> shows, and more</div>
+                <div class="main-subtitle">Plans start at ₹149. Cancel anytime.</div>
+            </section>
+            <section>
+                    <div class="main-description">Ready to watch? Enter your email to start your membership.</div>
+                    <div class="entry-btn">
+                        <span class="email-input"> email address</span>
+                        <span class="try-btn">Try 14 days for 0 ₹</span>
+                    </div>
+                    <div class="terms">New members only. Terms below.</div>
+            </section>
+        </main>
+
+        <div class="faq-title">Frequently Asked Questions</div>
+    <section class="faq-section">
+        <div class="faq-item-1">
+            <span>What is Netflix?</span>
+            <span class="bi bi-plus-lg"></span>
+        </div>
+         <div class="faq-item-2">
+            <span>What is Netflix?</span>
+            <span class="bi bi-plus-lg"></span>
+        </div>
+         <div class="faq-item-3">
+            <span>How much the cost of Netflix?</span>
+            <span class="bi bi-plus-lg"></span>
+        </div>
+         <div class="faq-item-4">
+            <span>How much does Netflix cost?</span>
+            <span class="bi bi-plus-lg"></span>
+        </div>
+         <div class="faq-item-5">
+            <span>What are the payment methods for Netflix?</span>
+            <span class="bi bi-plus-lg"></span>
+        </div>
+    </section>
+    <footer>
+        <address>Questions? Call 000-800-919-1743</address>
+        <div class="footer-links">
+            <div class="sapration">
+                <span>a</span>
+                <span>b</span>
+                <span>b</span>
+                <span>d</span>
+            </div>
+            <div class="sepraton">
+                <span>w</span>
+                <span>w</span>
+                <span>we</span>
+                <span>sfw</span>
+            </div>
+            <div class="sepraton">
+                <span>des</span>
+                <span>awz</span>
+                <span>zda</span>
+                <span>fsd</span>
+            </div>
+            <div class="sepraton">
+                <span>we</span>
+                <span>gdd</span>
+                <span>ewwe</span>
+                <span>dd</span>
+            </div>
+            
+        </div>
+        <div class="india">NETFLIX INDIA</div>
+        <div class="final">This page is protected by Google reCAPTCHA to ensure you're not a bot.</div>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container{
+            border: 1px solid black;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 5px gray;
+            width: 500px;
+        }
+        .box{                 
+            display: flex;
+            flex-direction: column;
+            /* check BOX{....} for checkbox and radio button */
+        }
+        
+        label{
+            font-weight: bold;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        /* input,select{
+            width: 100%;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+        } */
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="time"],
+        input[type="color"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input::placeholder{
+            padding-left: 10px;
+        }
+
+        meter,progress{
+            width: 100%;
+            height: 20px;
+        }
+
+        .reg-btn{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;        
+        }
+
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .join{
+            background-color: blue;
+        }
+        .reset{
+            background-color: red;
+        }
+        #check-b{
+            /* display: flex;
+            flex-direction: row; */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            padding-top: 5px;
+        }
+        
+        #radio-b{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            padding-top: 5px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" novalidate>
+            <h1>🏋️Gym Membership Portal</h1>
+            <img src="" alt="fitness-gym">
+            <div class="box">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter Memeber Name">
+            </div>
+            <div class="box">
+                <label for="password">Pasaword</label>
+                <input type="password" name="password" placeholder="Enter Password">
+            </div>
+
+            <div class="box">
+                <label for="male">Gender</label>
+                <div id="radio-b">
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
+            </div>
+
+            <div class="box">
+                <label for="Weight-loss">Fitness Goal</label>
+                <div id="check-b">
+                    <input type="checkbox" name="Weight-loss" value="Weight Loss">Weight Loss
+                    <input type="checkbox" name="Weight-loss" value="muscle gain">Muscle Gain
+                    <input type="checkbox" name="Weight-loss" value="Strength">Strength
+                    <input type="checkbox" name="Weight-loss" value="Cardio">Cardio
+                </div>
+            </div>
+
+            <div class="box">
+             <label for="Membership-plan">Membership Plan</label>
+             <select name="membership-plan">
+                <option value="Select plan">Select plan</option>
+                <option value="monthly">monthly</option>
+                <option value="Quarterly">Quarterly</option>
+                <option value="Yearly">Yearly</option>
+             </select>   
+            </div>
+
+            <div class="box">
+                <label for="">Joining Date</label>
+                <input type="date">
+            </div>
+
+            <div class="box">
+                <label for="">Workout Time</label>
+                <input type="time">
+            </div>
+
+            <div class="box">
+                <label for="">Theme Color</label>
+                <input type="color">
+            </div>
+            <div class="box">
+                <label for="">Upload Medical Report</label>
+                <input type="file">
+            </div>
+            <div class="box">
+                <label for="Health-report">Health Notes</label>
+                <textarea rows="5" name="Health-report" id="" placeholder="Enter your health details..."></textarea>
+            </div>
+            <div class="box">
+                <label for="">BMI Meter</label>
+                <meter value="60" min="0" max="100"></meter>
+            </div>
+
+            <div class="box">
+                <label for="">BMI Meter</label>
+                <progress value="75" max="100"></progress>
+            </div>
+            <div class="reg-btn">
+                <button class="join" type="submit">Join Now</button>
+                <button class="reset" type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

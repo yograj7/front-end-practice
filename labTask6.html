@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            background-color: rgb(87, 146, 248);
+            margin: 30px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header{
+            text-align: center;
+        }
+        .form-pair{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .div-pair{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+
+        .div-pair label{
+            width: 300px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            background-color:white;
+ 
+        }
+
+        textarea{
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        label{
+            margin: 10px;
+            font-weight: bold;
+        }
+
+
+        meter, progress {
+            width: 100%;
+            height: 25px; 
+            margin-bottom: 15px;
+        }
+
+        .buttons button {
+            width: 100%;
+            padding: 12px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        img{
+            width: 100%;
+            height: 300px;
+        }
+        h1{
+            text-align: center;
+        }
+
+        .header{
+            padding: 30px;
+        }
+        .form{
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 SPACE CAMP</h1>
+            <p>Reach Beyond the Stars • Train Like an Astronaut</p>
+        </div>
+        <div class="img">
+            <img src="./public/images/astronot.jpg" alt="space-image">
+        </div>
+        <div class="form">
+            <form action="" >
+                <h1>Explorer Registration Form</h1>
+
+                <div class="div-pair">
+                    <div class="form-pair">
+                        <label for="">Explore Name</label>
+                        <input type="text" placeholder="Enter Explorer Name" name="username" required>
+                    </div>
+
+                     <div class="form-pair">
+                        <label for="password"> Password</label>
+                        <input type="password" placeholder="Enter Password" name="password">
+                     </div>
+                </div>
+
+                <div class="div-pair">
+                    <div class="form-pair">
+                        <label for="age">Age</label>
+                        <input type="number" min="0" max="100" value="18" step="1" >
+                    </div>
+                    
+                    <div class="form-pair">
+                        <label for="fitness-score">Fitness score</label>
+                        <input type="range" value="75" min="0" max="100">
+                    </div>
+                </div>
+
+                <div class="div-pair">
+                    <div class="form-pair">
+                        <label for="Camp Date">Camp Date</label>
+                        <input type="date">
+                    </div>
+                    
+                    <div class="form-pair">
+                        <label for="time">Reporting Time</label>
+                        <input type="time">
+                    </div>
+                </div>
+                    
+                <div class="form-pair">
+                    <label for="Mission-briefing">Mission Briefing</label>
+                    <input type="datetime-local" name="Mission-briefing">
+                </div>
+
+                <div class="div-pair">
+                    <div class="form-pair">
+                        <label for="color">Preferred Suit Color</label>
+                        <input type="color" name="color">
+                    </div>
+                    
+                    <div class="form-pair">
+                        <label for="id-cards">Upload ID Card</label>
+                        <input type="file" name="id-cards">
+                    </div>
+                </div>
+
+                <div class="form-pair">
+                    <label for="answer">Why do you want to become an Astronaut?</label>
+                    <textarea name="answer" id="" placeholder="Write your answer here..."></textarea>
+                </div>
+
+                <div class="form-pair">
+                    <label for="">Medical Fitness</label>
+                    <meter value="75" min="0" max="100" low="60" high="80"></meter>
+                </div>
+
+                <div class="form-pair">
+                    <label for="">Registration Progress</label>
+                    <progress value="60" max="100"></progress>
+                </div>
+
+                <div class="buttons">
+                    <button>Register Mission</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>

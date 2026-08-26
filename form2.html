@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .container{
+            background-color: rgb(232, 229, 229);
+            display: flex;
+            border-radius: 10px;
+            width: 900px;
+            height: 800px;
+        }
+
+        .left{
+            width: 40%;
+            padding: 30px;
+            background-color: rgb(139, 64, 64);
+            border-radius: 10px;
+        }
+
+        .left img{
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0px 10px 10px;
+        }
+
+        .right{
+            width: 60%;
+        }
+        .right h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        label{
+            display: block;
+            text-size-adjust: 20px;
+        }
+        form{
+            padding: 10px;
+        }
+        input{
+            width: 100%;
+            height: 30px;
+        }
+        .form-pair{
+            margin: 20px;
+            margin-top: -5px;
+        }
+        .form label{
+         font-size: 10px; 
+         /* font-weight: bold; */
+           
+        }
+        button{
+            width: 100%;
+            background-color: antiquewhite;
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px ;
+            padding: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        input:placeholder-shown{
+            padding-left: 10px;
+        }
+        input{
+            border-radius: 5px;
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            margin-top: 10px;
+        }
+        .right h1{
+            margin: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="./public/images/puppy-6.jpg" alt="petimage"><br><br>
+            <h1>🐾 HAPPY PAWS</h1><br>
+            <p>Find Your Forever Friend ❤️</p><br>
+            <p>Love • Care • Adopt</p>
+        </div>
+
+        <div class="right">
+            <h1>Pet Adoption Registration</h1>
+            <form action="" novalidate>
+                <div class="form-pair">
+                    <label for="">Adopter Name</label>
+                    <input type="text" placeholder="Enter Your Name" name="Adoptername" minlength="5" required>
+                </div>
+                <div class="form-pair">
+                    <label for="">Create Password</label>
+                    <input type="password" placeholder="Create Password" name="password" minlength="4" maxlength="16" required>
+                </div>
+
+                <div class="form-pair">
+                    <label for="">Email Address</label>
+                    <input type="email" placeholder="Enter Email" name="email" required>
+                </div>
+
+                <div class="form-pair">
+                    <label for="">Instagram Profile</label>
+                    <input type="url" placeholder="https://instagram.com/username" name="Instagramprofile">
+                </div>
+                <div class="form-pair">
+                    <label for="">Preferred Pet</label>
+                    <input type="text" placeholder="Search your pet" name="petbread" list="breads" required>
+                    <datalist id="breads">
+                        <option value="Goldern retriver"></option>
+                        <option value="German Shephard"></option>
+                        <option value="asd"></option>
+                        <option value="asdd"></option>
+                    </datalist>
+                </div>
+                <div class="form-pair">
+                    <label for="">Home Size (Sq.ft)</label>
+                    <input type="text" value="800">
+                </div>
+
+                <div class="form-pair">
+                    <label for="">Application ID</label>
+                    <input type="text" value="ADP2026" readonly>
+                </div>
+                <div class="form-pair">
+                    <label for="">Application Status</label>
+                    <input type="text" value="Pending Verification" disabled>
+                </div>
+                <button>Adopt Now</button>
+                
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
