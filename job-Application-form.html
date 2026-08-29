@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div h1 {
+            text-align: center;
+        }
+
+        h1{
+            color: blue;
+        }
+        .container{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+        }
+
+        .box-pair{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            gap: 10px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+        .checkbox{
+            display: flex;
+            flex-direction: row;
+            display: block;
+        
+        }
+
+        input::placeholder{
+            padding: 10px;
+        }
+
+        input{
+            height: 30px;
+            border-radius: 10px;
+            
+            
+        }
+
+        input[type="file"]{
+            padding: 10px;
+            border: 1px solid black;
+            
+        }
+
+        input:required{
+            border:1px solid red;
+        }
+
+        input:valid{
+            border:1px solid green;
+            border-width: 3px;
+        }
+
+        input:focus{
+            border: 6px solid rgb(108, 188, 223);
+        }
+
+        input:in-range{
+            background-color: rgb(163, 230, 163);
+        }
+
+        input:out-of-range{
+            background-color: rgb(234, 120, 132);
+        }
+
+        input:active{
+            border:1px solid green;
+        }
+
+        button{
+           border: none;
+           background-color:red ;
+           width: 100%;
+           padding: 10px;
+           border-radius: 10px; 
+           color: white;
+           font-weight: bold;
+           cursor: pointer;
+           
+        }
+        button:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Job Application Form</h1>
+
+            <div class="box-pair">
+                <label for="">Application ID</label>
+                <input type="text" placeholder="APP2026001" readonly>
+            </div>
+
+            <div class="box-pair">
+                <label for="">Full Name</label>
+                <input type="text" placeholder="Enter Your Full Name" required>
+            </div>
+
+            <div class="box-pair">
+                <label for="">Email</label>
+                <input type="text" placeholder="Enter Email Address" required>
+            </div>
+
+            <div class="box-pair">
+                <label for="">Phone Number</label>
+                <input type="number" placeholder="Enter Mobile Number" required>
+            </div>
+
+            <div class="box-pair">
+                <label for="">Experience (Years)</label>
+                <input type="number" placeholder="Enter Experience" min="1" max="10" step="1" required>
+            </div>
+
+            <div class="box-pair">
+                <label for="">Expected Salary</label>
+                <input type="number" placeholder="Enter Expected Salary" min="10000" max="100000" required>
+            </div>
+
+            <div class="box-pair">
+                <label for="">Upload Resume</label>
+                <input type="file" required>
+            </div>
+
+            <div class="box-pair" >
+                <label for="">Skills</label>
+                <div class="checkbox">
+                <input type="checkbox">HTML
+                <input type="checkbox">CSS
+                <input type="checkbox">JavaSript
+                <input type="checkbox">Java
+                </div>
+            </div>
+
+            <div class="box-pair">
+                <label for="">Address</label>
+                <textarea name="" id="" rows="5" placeholder="Enter Years Address"></textarea>
+            </div>
+
+            <div class="box-pair" >
+                <div class="checkbox">
+                    <label for=""></label>
+                    <input type="checkbox">I Accept the Declaration
+                </div>
+            </div>
+
+            <button>Apply</button>
+        </form>
+    </div>
+</body>
+</html>
