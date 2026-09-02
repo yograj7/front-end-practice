@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            flex-direction: column;
+            gap: 30px;
+
+        }
+
+        img {
+
+            transform: rotate(0deg) scale(1);
+            border-radius: 50%;
+            transition: 1s;
+
+        }
+
+        img:hover {
+            transform: rotate(360deg) scale(1.1);
+            transition: 10s;
+        }
+
+        .btn{
+            font-size: 50px;
+            color: rgb(55, 186, 238);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <img src="./public/images/GTA.jpg" width="300" height="300">
+    <div class="btn">
+        <span class="bi bi-skip-start-btn-fill"></span>
+        <span class="bi bi-play-btn-fill"></span>
+        <span class="bi bi-skip-end-btn-fill"></span>
+    </div>
+</body>
+</html>

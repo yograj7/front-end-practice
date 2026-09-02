@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1, h2 ,h3{
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .card {
+        width: 300px;
+  
+        /* Crucial for the smooth animation */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        border: 1px solid red;
+        border-width: 3px solid red;
+        border-radius: 20px;
+        }
+
+        /* Trigger the zoom on hover */
+        .card:hover {
+        transform: scale(1.05); /* Enlarges the card by 5% */
+        border: 1px solid green;
+        border-width: 3px;
+        }
+        .bg-dark{
+            border-radius: 20px;
+        }
+
+        .pro-plan{
+            border: 1px solid orange;
+        }
+
+        .pro-plan:hover{
+            border: 1px solid orange;
+        }
+
+    </style>
+</head>
+<body class="bg-black">
+    <h1 style="color: white ; margin-top: 20px;">Netflix Subscription Plans</h1>
+    <div class="container d-flex flex-row gap-5 m-5 align-items-center justify-content-center">
+        
+        <div class="card p-0 ">
+            <div class="card-body text-white bg-dark ">
+                <h1 class="text-danger">NETFLIX</h1>
+                <h2>Basic Plan</h2>
+                <h1 class="text-warning">₹199/Month</h1>
+
+                <ul>
+                    <li>HD Quality</li><hr>
+                    <li>Watch on 1 Device</li><hr>
+                    <li>Unlimited Movies</li><hr>
+                    <li>Download Offline</li><hr>
+                    <li>No Cancellation Charges</li><hr>
+                </ul>
+
+                <button class="btn btn-success w-100">Subscribe Now</button>
+            </div>
+
+        </div>
+
+        <div class="card p-0 bg-body-secondary ">
+            <div class="card-body text-white bg-dark ">
+                <h1 class="text-danger">NETFLIX</h1>
+                <h2>Basic Plan</h2>
+                <h1 class="text-warning">₹199/Month</h1>
+
+                <ul>
+                    <li>HD Quality</li><hr>
+                    <li>Watch on 1 Device</li><hr>
+                    <li>Unlimited Movies</li><hr>
+                    <li>Download Offline</li><hr>
+                    <li>No Cancellation Charges</li><hr>
+                </ul>
+
+                <button class="btn btn-success w-100">Subscribe Now</button>
+            </div>
+
+        </div>
+
+        <div class="card pro-plan p-0 bg-body-secondary position-relative">
+            <div class="card-body text-white bg-dark ">
+                <h1 class="text-danger">NETFLIX</h1>
+                <h2>Basic Plan</h2>
+                <h1 class="text-warning">₹199/Month</h1>
+
+                <ul>
+                    <li>HD Quality</li><hr>
+                    <li>Watch on 1 Device</li><hr>
+                    <li>Unlimited Movies</li><hr>
+                    <li>Download Offline</li><hr>
+                    <li>No Cancellation Charges</li><hr>
+                </ul>
+
+                <button class="btn btn-success w-100">Subscribe Now</button>
+            </div>
+
+            <div>
+                <span class=" pro bi bi-gem bg-warning position-absolute rounded-2 px-2 " style="top: -10px; right: -10px; font-size: 20px;"> Pro</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
