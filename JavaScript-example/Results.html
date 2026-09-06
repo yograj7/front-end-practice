@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <script>
+        function bodyload(){
+            params = new URLSearchParams(location.search);
+            document.getElementById("lblCategory").textContent = params.get("Category");
+            document.getElementById("lblBrand").textContent = params.get("brand");
+            document.getElementById("lblRating").innerHTML = params.get("rating") + "<span class='bi bi-star-fill text-success'></span>";
+            
+        }
+
+    </script>
+
+
+</head>
+<body onload="bodyload()" class="container mt-2">
+    
+        <table class="table table-hover table-striped">
+            <tr>
+                <td>Category</td>
+                <td id="lblCategory"></td>
+            </tr>
+
+            <tr>
+                <td>Brand</td>
+                <td id="lblBrand"></td>
+            </tr>
+
+            <tr>
+                <td>Rating</td>
+                <td id="lblRating"></td>
+            </tr>
+
+        </table>
+            <a href="./search.html" class="btn btn-warning">Back</a>
+            
+        </body>
+</html>

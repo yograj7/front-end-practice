@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        "use strict";
+
+        function bodyload(){
+
+            document.getElementById("poster").src="../public/images/laptop.jpg";
+            document.getElementById("btn-login").value="Login";
+            document.getElementById("btn-register").value="Register Name";
+            document.getElementById("btnRegister").value="Conform";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img id="poster" height="100" width="100" border="2" src="" alt="">
+    </div>
+
+    <div>
+        <form action="" name="frm-login">
+            <h3>Login</h3>
+
+            <dl>
+                <dt>Email</dt>
+                <dd><input type="text"></dd>
+            </dl>
+            <input type="button" id="btn-login">
+
+            <div>
+                <h3>Register</h3>
+                <dl>
+                    <dt>User Name</dt>
+                    <dd><input type="text"></dd>
+                </dl>
+                <input type="button" id="btn-register">
+            </div>
+        </form>
+
+            <form action="" name="frmegistation">
+                <h3>Register</h3>
+
+                <dl>
+                    <dt>User Name</dt>
+                    <dd><input type="text"></dd>
+                    <dt>Email</dt>
+                    <dd><input type="text"></dd>
+                </dl>
+                <input type="button" id="btnRegister">
+            </form>
+    
+    </div>
+</body>
+</html>

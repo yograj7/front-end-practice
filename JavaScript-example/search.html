@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form class="form" action="Results.html" method="get">
+
+            <dl class="w-25">
+
+                <dt>Select Category</dt>
+
+                <dd>
+
+                    <select name="Category" class="form-select">
+                        <option value="" >Select Category</option>
+
+                        <option value="Electronics">Electronics</option>
+
+                        <option value="Fashion">Fashion</option>
+
+                        <option value="Footwear">Footwear</option>
+                    </select>
+
+                </dd>
+
+                <dt>Enter Brand Name</dt>
+
+                <dd>
+
+                    <input type="text" class="form-control" name="brand">
+
+                </dd>
+
+                <dt>Select Rating</dt>
+
+                <dd>
+
+                    1 <input type="range" class="form-range" name="rating" min="1" value="1" max="5"> 5
+
+                </dd>
+
+            </dl>
+
+            <button class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
