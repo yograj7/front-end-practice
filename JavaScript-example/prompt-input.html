@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <script>
+
+        function AddClick(){
+
+            foldername = prompt("Enter Folder Name");
+
+            folders = document.getElementById("folders");
+
+            if(foldername===null){
+
+                alert("You canceled..");
+
+            } else if(foldername===""){
+
+                alert("Please provide a name for folder");
+
+            } else {
+
+                folders.innerHTML += "<span class='bi bi-folder mx-2'></span>" + foldername + "<span class='bi bi-trash text-danger mx-2'></span>" + "<br>";
+
+            }
+
+        }
+
+        function ClearClick(){
+
+            document.getElementById("folders").innerHTML = "";
+
+        }
+
+    </script>
+
+</head>
+
+<body class="container-fluid">
+
+    <div class="mt-2">
+
+        <button onclick="AddClick()" class="btn btn-primary"> <span class="bi bi-folder-plus"></span> Add New Folder </button>
+
+        <button onclick="ClearClick()" class="btn btn-outline-danger bi bi-trash-fill"> Clear All</button>
+
+    </div>
+
+    <div class="mt-3 w-25" id="folders">
+
+        
+
+    </div>
+
+</body>
+
+</html>

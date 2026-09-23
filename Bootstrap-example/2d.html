@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ChangeCase(){
+            var passport = document.getElementById("txtPassport").value;
+            document.getElementById("txtPassport").value = passport.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Passport Number</dt>
+        <dd><input type="text" onkeyup="ChangeCase()" id="txtPassport"></dd>
+    </dl>
+</body>
+</html>

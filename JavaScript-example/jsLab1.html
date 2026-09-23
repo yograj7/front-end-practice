@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>        
+    // var a = prompt("Enter the amount: ");
+    // var k = parseInt(a);
+    // var p =k.toLocaleString("en-IN",{style:"currency", currency: "INR"});
+    //     console.log(p);
+
+    // var a = Number(prompt("marks1"));
+    // var b = Number(prompt("marks2"));
+    // var c = Number(prompt("marks3"));
+
+    // var d = a+b+c/3;
+    
+    // console.log(d);
+    // console.log(d.toFixed(2));
+
+    // TASK 1 COMPLETED
+
+    // var name = prompt("Enter Product name: ");
+    // var price = Number(prompt("Enter price"));
+    // var quantity = Number(prompt("Enter Quantity"));
+
+    // var total = price*quantity;
+    // console.log("name: "+ name);
+    // console.log("Price: "+ price);
+    // console.log("Quantity: "+quantity);
+    // console.log("Total: "+total);
+    // console.log("Indian Currency: "+total.toLocaleString("en-IN",{style:"currency",currency:"INR"}));
+
+    //TAsk 2 Lucky number
+
+        var num = Number(prompt("Enter the number: "));
+        
+        var total = 0;
+        while(num > 0){
+            var total = total + num%10 ;
+            var num = (num/10);
+
+        }
+        console.log("Total " + total);
+        var x = Number(total.toFixed(0)%2);
+        if(x===0){
+            console.log("Luckey Number");
+        }else{
+            console.log("Try Another number");
+        }
+
+
+    </script>
+</body>
+</html>

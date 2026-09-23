@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare-Hospital</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-3">
+        <div class="container-fluid">
+           
+            <div class="fs-3 fw-bold text-white d-flex align-items-center gap-2">
+                <span class="bi bi-hospital"></span>
+                <span class="navbar-brand m-0">MediCare</span>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="navbar-collapse collapse justify-content-end" id="menu">
+                <ul class="navbar-nav gap-lg-4 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container my-5 ">
+        <div class="d-flex gap-2 m-lg-3 align-items-center">
+            <div class="col-md-6 ">
+                <span class="display-4 fw-bold text-primary">24/7 Heathcare Services</span>
+                <p class="text-muted lead mt-3" >Providing quality treatment with experienced doctors and advanced medical facilities. Your health is our priority.</p>
+                <div class="d-flex gap-4">
+                    <button class="btn btn-primary p-3 px-5 rounded rounded-pill mt-3">Book Appointment</button>
+                    <button class="btn btn-outline-primary px-5 rounded rounded-pill mt-3">Explore Services</button>
+                </div>
+            </div>
+            <div class="col-md-6 align-items-center">
+                <img class="img-fluid shadow rounded rounded-5" style="width: 100%;" src="../public/images/Doctors.png" alt="Doctors">
+            </div>
+        </div>
+    </main>
+
+    <h1 class="text-primary justify-content-center d-flex">Our Services</h1>
+    <section class="d-flex  justify-content-center gap-5 pt-5">
+        <div class="card align-items-center p-5 rounded rounded-4 w-25 shadow-lg">
+            <span class="bi bi-heart-pulse-fill display-5 text-danger"></span>
+            <h1>Emergency</h1> 
+            <p>24 Hours Emergency Care Available</p>
+            <button class="btn btn-danger rounded rounded-pill px-4">View More</button>
+        </div>
+        <div class="card align-items-center p-5 rounded rounded-4 w-25 shadow-lg"">
+            <span class="bi bi-capsule display-4 text-success"></span>
+            <h1>Emergency</h1>
+            <p>24 Hours Emergency Care Available</p>
+            <button class="btn btn-success rounded rounded-pill px-4">View More</button>
+        </div>
+        <div class="card align-items-center p-5 rounded w-25 rounded-4 shadow-lg"">
+            <span class="bi bi-truck display-5 text-primary"></span>
+            <h1>Emergency</h1>
+            <p>24 Hours Emergency Care Available</p>
+            <button class="btn btn-primary rounded rounded-pill px-4">View More</button>
+        </div>
+
+    </section>
+
+    <h1 class="text-center text-primary">Our Doctors</h1>
+    <section class="d-flex justify-content-evenly">
+        
+        <div class="card d-flex flex-column">
+            <img src="../public/images/student.jpg" alt="">
+            <div class="d-flex gap-2 justify-content-center mt-2">
+            <span class="fw-bold">Dr.Akshaya</span>
+            <span class="bg-primary text-white p-2 rounded">10 Years Exp</span>
+        </div>
+        <p class="justify-content-center d-flex mt-2">Dentist</p>
+        <button class="mx-3 btn btn-primary" >Book Now</button>
+        </div>
+        
+        <div class="card d-flex flex-column">
+            <img src="../public/images/student.jpg" alt="">
+            <div class="d-flex gap-2 justify-content-center mt-2">
+            <span class="fw-bold">Dr.Akshaya</span>
+            <span class="bg-primary text-white p-2 rounded">10 Years Exp</span>
+        </div>
+        <p class="justify-content-center d-flex mt-2">Dentist</p>
+        <button class="mx-3 btn btn-primary" >Book Now</button>
+        </div>
+        
+        <div class="card d-flex flex-column">
+            <img src="../public/images/student.jpg" alt="">
+            <div class="d-flex gap-2 justify-content-center mt-2">
+            <span class="fw-bold">Dr.Akshaya</span>
+            <span class="bg-primary text-white p-2 rounded">10 Years Exp</span>
+        </div>
+        <p class="justify-content-center d-flex mt-2">Dentist</p>
+        <button class="mx-3 btn btn-primary" >Book Now</button>
+        </div>
+    </section>
+    
+
+</body>
+</html>

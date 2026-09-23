@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function verifyName(){
+            var name = document.getElementById("txtName").value;
+            var lblName = document.getElementById("lblName");
+
+            if(name.length===0){
+                lblName.innerHTML = "Name required".fontsize(2).fontcolor("red");
+            }else{
+                lblName.innerHTML = "";
+            }
+        }
+
+        function verifyComments(){
+            var Comments = document.getElementById("txtComments").value;
+            var lblComments = document.getElementById("lblComments");
+            lblComments.innerHTML = `${100-Comments.length} chars lefts`;
+
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" id="txtName" onblur="verifyName()"></dd>
+        <dd id="lblName"></dd>
+
+        <dt>Comments</dt>
+        <textarea maxlength="100" onkeyup="verifyComments()" name="" id="txtComments"></textarea>
+        <dd id="lblComments"></dd>
+    </dl>
+
+</body>
+</html>

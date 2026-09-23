@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgba(226, 218, 218, 0.711);
+        }
+
+        nav{
+            background-color: black;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .shortcurts{
+            display: flex;
+            gap: 20px;
+        }
+
+        img{
+            border-radius: 15px;
+        }
+
+        .main-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .entry{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            line-height: 30px;
+
+        }
+
+        .heading{
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        .btn{
+            background-color: rgb(27, 172, 239);
+            padding: 9px;
+            border-radius: 10px;
+            
+        }
+
+        .parentBox{
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+        }
+
+        .box{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 10px;
+            /* padding: 10px; */
+        }
+
+        footer{
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <span><b>Learning Hub</b></span>
+        <div class="shortcurts">
+            <span>Home</span>
+            <span>Contact</span>
+            <span>Task</span>
+            <span>Profile</span>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="entry">
+           <div >
+             <span class="heading">Welcome Students</span>
+            <p>Learn HTML, CSS, JavaScript with daily practice tasks.</p>
+            <span class="btn">Start Learning</span>
+           </div>
+        </div>
+        <div>
+            <img src="..\public\images\LearningHub.png" alt="">
+        </div>
+    </div>
+    <div class="parentBox">
+
+        <div class="box">
+            <span><b>HTML</b></span>
+            <p>15 Tasks Completed</p>
+        </div>
+
+        <div class="box">
+            <span><b>HTML</b></span>
+            <p>15 Tasks Completed</p>
+        </div>
+
+        <div class="box">
+            <span><b>HTML</b></span>
+            <p>15 Tasks Completed</p>
+        </div>
+
+        <div class="box">
+            <span><b>HTML</b></span>
+            <p>15 Tasks Completed</p>
+        </div>
+
+        <div class="box">
+            <span><b>HTML</b></span>
+            <p>15 Tasks Completed</p>
+        </div>
+
+        <div class="box">
+            <span><b>HTML</b></span>
+            <p>15 Tasks Completed</p>
+        </div>
+
+        <div class="box">
+            <span><b>HTML</b></span>
+            <p>15 Tasks Completed</p>
+        </div>
+
+        <div class="box">
+            <span><b>HTML</b></span>
+            <p>15 Tasks Completed</p>
+        </div>
+
+        <div class="box">
+            <span><b>HTML</b></span>
+            <p>15 Tasks Completed</p>
+        </div>
+
+
+    </div>
+    <footer>
+        <p>&copy; 2026 Learning Hub</p>
+    </footer>
+</body>
+</html>

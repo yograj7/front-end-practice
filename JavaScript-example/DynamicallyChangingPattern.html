@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+
+        var pattern = / /;
+        var tip = "Select Country Name";
+
+        function CountryChange(){
+
+            var countryName = document.getElementById("lstCountries").value;
+            var imgFlag = document.getElementById("imgFlag");
+
+            if(countryName==="India"){
+
+                imgFlag.src = "../public/images/india.png";
+                pattern = /^\+91\d{10}$/;
+                tip = "India mobile code +91 and 10 digits";
+
+            } else if(countryName==="US"){
+
+                imgFlag.src = "../public/images/us.png";
+                pattern = /^\+\(1\)\(\d{3}\)\s\d{3}-\d{4}$/;
+                tip = "US mobile code +(1)(000) 000-0000";
+
+            } else if(countryName==="UK") {
+                imgFlag.src = "../public/images/uk.png";
+                pattern = /^\+\(44\)\(\d{2}\)\s\d{4}\s\d{4}$/;
+                tip = "UK mobile code +(44)(00) 0000 0000";
+
+            } else {
+
+                imgFlag.src = "";
+                imgFlag.alt = "N/A";
+                pattern = / /;
+
+                tip = "Please select your country";
+
+            }
+
+            document.getElementById("txtMobile").placeholder = tip;
+
+        }
+
+        function VerifyMobile(){
+            var mobileNumber = document.getElementById("txtMobile").value;
+            var lblMobile = document.getElementById("lblMobile");
+
+            if(mobileNumber.match(pattern)) {
+                document.write(`<h1>Your mobile ${mobileNumber} verified successfully..</h1>`);
+            } else {
+                lblMobile.innerHTML = `Invalid Mobile <br> ${tip}`.fontcolor('red').fontsize(2);
+            }
+
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+    <dl class="mt-4 w-25">
+        <dt>Select Your Country</dt>
+        <dd class="input-group">
+            <select class="form-select" id="lstCountries" onchange="CountryChange()">
+                <option>Choose Country</option>
+                <option>India</option>
+                <option>US</option>
+                <option>UK</option>
+            </select>
+            <img id="imgFlag" class="input-group-text" width="70">
+        </dd>
+        <dt>Your Mobile Number</dt>
+        <dd>
+            <input type="text" class="form-control" id="txtMobile">
+        </dd>
+        <dd id="lblMobile"></dd>
+    </dl>
+    <button onclick="VerifyMobile()" class="btn btn-primary">Submit</button>
+
+</body>
+</html>
