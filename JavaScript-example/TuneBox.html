@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../src/scripts/tunebox.js"></script>
+</head>
+<body class="bg-black container-fluid" onload="SongsLoad()">
+    <header class="p-3 bg-dark text-white text-center">
+        <div class="display-6  fw-bold">🎵 TuneBox</div>
+        <p>Your Simple Music Playlist</p>
+    </header>
+    <main class="p-5">
+        <div class="d-flex justify-content-between ">
+            <span class="text-white fs-3 ">My Playlist</span>
+            <span class="text-white bg-dark rounded-pill p-3" id="count"> </span>
+        </div>
+        <div class="">
+            <div id="cards" class="d-flex flex-wrap">
+            
+            </div>
+        </div>
+        <section>
+            <div class="bg-dark p-4 rounded-2 text-white my-4">
+                <div  class="fw-bold fs-3 mb-4 ">Playlist Control</div>
+                <button onclick="AddSong()" class=" btn btn-primary p-2  my-3"> <span class="bi bi-plus-circle text-warning"></span>  Add Song</button>
+                <button onclick="removeSong()" class="btn btn-primary p-2  m-3"><span class="bi bi-trash-fill text-danger"></span>  Remove Song</span>
+                <button onclick="sortAZ()" class="btn btn-primary my-3">Sort [A-Z]</button>
+                <button onclick="latestSong()" class="btn btn-primary p-2  m-3"> Latest</span>
+            </div>
+
+            <div class="bg-dark p-4 rounded-2 text-white my-4">
+                <div class="fw-bold fs-3 mb-4 ">Recently Added</div>
+                <div id="recentlyAdded" class="d-flex gap-3"></div>
+                
+            </div>
+
+
+
+            <div class="bg-dark p-4 rounded-2 text-white my-4">
+                <div class="fw-bold fs-3 mb-4">Playlist Summary</div>
+                <div id="PlaylistSummery" class="d-flex gap-3"></div>
+            </div>
+            
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <hr class="text-white">
+        <p class="text-white text-center">🎵 TuneBox | All right reserved </p>
+    </footer>
+</body>
+</html>

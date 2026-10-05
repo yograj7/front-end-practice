@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../src/scripts/movie.js"></script>
+</head>
+<body onload="LoadMovies()" >
+    <div class="d-flex gap-3">
+        <div class="col-2 p-4 bg-dark-subtle " style="height: 725px; width: 300px;">
+        <span class="bi bi-film fw-bold display-4 " style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> AAA</span>
+        <div class=" fw-bold mt-2">
+            Cinemazzzz
+        </div>
+
+        <div class="fs-3 fw-bold mt-4 mb-4">
+            Admin Dashboard
+        </div>
+
+       <input type="text" placeholder="Enter Movie name" class="form-control mt-6" id="lblMovie">
+
+        <button onclick="addClick()" class="mt-4 p-1 rounded-2 bg-primary text-white border-primary"><span class="bi bi-plus-circle"></span> Add New Movie</button>
+    </div>
+    <div class="m-4">
+        <div class=" d-flex m-4 gap-4">
+            <button onclick="sortAsc()" class="bi bi-sort-alpha-down btn btn-success"></button>
+            <button onclick="sortDesc()" class="bi bi-sort-alpha-up btn btn-success"></button>
+        </div>
+        <select class="col-4 form-select p-3" size="5" id="selectMovie" >
+
+        </select>
+
+        <div class="p-3 d-flex gap-3">
+            <button onclick="editClick()" class="bi bi-pen-fill btn btn-warning"> Edit</button>
+            <button onclick="deleteClick()" class="bi bi-trash-fill btn btn-danger"> Delete</button>
+        </div>
+    </div>
+
+    
+    </div>
+</body>
+</html>

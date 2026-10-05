@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function bodyLoad(){
+            fetch(`https://dummyjson.com/products`)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(object){
+                object.products.map(function(product){
+                    var div = document.createElement("div");
+                    div.className = "card m-2 p-2";
+                    div.style.width ="200px";
+                    div.innerHTML =`
+                    <img src=${product.thumbnail} height="100" class="card card-img-top">
+                    <div class="card-header" style="height:90px">
+                    ${product.title}    
+                    </div>
+                    <div class="m-2">Rs ${product.price}</div>
+                    <div class="card-footer">
+                    <button class="btn btn-warning w-100">Buy Now</button>    
+                    </div>
+
+                    `;
+
+                    document.querySelector("body").appendChild(div);
+                })
+
+            })
+        }
+    </script>
+</head>
+<body class="flex-wrap container-fluid d-flex justify-content-center" onload="bodyLoad()">
+    
+</body>
+</html>

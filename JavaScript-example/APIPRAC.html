@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        var Categories = ["Men", "Women","Kids","Electroics"];
+
+        function bodyload(){
+            Categories.map(function(Category){
+                var option = document.createElement("option");
+                option.text= Category;
+                option.value= Category;
+                document.querySelector("select").appendChild(option);
+            })
+        }
+
+        function bodyload1(){
+            Categories.map(function(Category){
+                var span = document.createElement("span");
+                span.innerHTML = ` <a href="${Category}.html">${Category}</a>`;
+                span.className ="d-flex justify-content-evenly flex-row ";
+                document.querySelector("nav").appendChild(span);
+            })
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+
+    <nav class="m-4 p-4 bg-black  rounded-2 text-white border-white border-2">
+        
+    </nav>
+    <button onclick="bodyload1()" class="p-2 bg-danger text-white rounded-2 m-5">click me </button>
+
+    <select name="" id="">
+
+    </select>
+
+</body>
+</html>
