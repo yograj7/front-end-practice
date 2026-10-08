@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../src/scripts/emp.js"></script>
+</head>
+<body onload="empLoad()" class="container-fluid bg-body-secondary d-flex ">
+    <div class="p-4 d-flex flex-column gap-3 col-3 bg-primary-subtle" style="height: 728px;">
+        <div>
+            <div class="display-4">
+                Admin Dashbord
+                <hr>
+            </div>
+        </div>
+        <div>
+            <b>Name</b>
+            <input type="text" class="form-control p-3" placeholder="Enter Employee Name" id="lblname">
+        </div>
+        <div>
+            <b>Role</b>
+            <input type="text" class="form-control p-3" placeholder="Enter Employee Role" id="lblrole">
+        </div>
+        <button onclick="addEmp()" class="btn btn-success bi bi-person-add "> Add Employee</button>
+        <hr>
+
+        <div class="d-flex justify-content-evenly">
+            <button class="btn btn-dark">SortAsc</button>
+            <button class="btn btn-dark">Reverse</button>
+            <button class="btn btn-dark">Refresh</button>
+        </div>
+        
+    </div>
+    <div class="col col-5 p-4" >
+       <div class="m-2 bg-success-subtle d-flex flex-column gap-2 p-3 rounded-4 border-1 border-success border">
+            
+            <div class="input-group">
+            <input type="text" placeholder="Search Employee" class="form-control " name="" id="search">
+            <button onclick="searchClick()" class="bi bi-search bg-warning p-2 input-group-text" ></button>
+        </div>
+            
+        </div>
+
+        <div id="displayEmp">
+
+        </div>
+
+    </div>
+    <div class="col-4 bg-success-subtle p-3">
+        <div id="result">
+
+        </div>
+    </div>
+</body>
+</html>
